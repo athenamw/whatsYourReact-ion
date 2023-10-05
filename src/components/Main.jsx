@@ -1,4 +1,6 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
+import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
 
 
 const Main = () => {
@@ -8,9 +10,19 @@ const Main = () => {
             <section className="w-full h-screen absolute top-0 left-0 bg-white/30">
                 <section>
                     <h1>I'm Athena Wallis</h1>
-                    <h2>I'm a 
-                     
+                    
+                    <h2>I'm a  <Typewriter
+                        options={{
+                        strings: ['Developer', 'Customer Service Expert', 'Lifelong Learner'],
+                        autoStart: true,
+                        loop: true,
+                        }}
+                     />
                     </h2>
+                    <section>
+                        <FaGithub />
+                        <FaLinkedinIn />
+                    </section>
                 </section>
 
 
