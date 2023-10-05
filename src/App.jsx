@@ -11,6 +11,7 @@ function App() {
     <div>
       <Sidenav/>
       <Main />
+      <Portfolio />
     </div>
   )
 }

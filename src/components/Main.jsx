@@ -23,8 +23,12 @@ const Main = () => {
                      />
                     </h2>
                     <section className="flex justify-between pt-6 max-w-[200px] w-full">
+                        <a href="https://github.com/athenamw">
                         <FaGithub className="cursor-pointer" size={20}/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/athenawallis/">
                         <FaLinkedinIn className="cursor-pointer" size={20} />
+                        </a>
                     </section>
                 </section>
 
