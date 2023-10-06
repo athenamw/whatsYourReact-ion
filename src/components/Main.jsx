@@ -15,7 +15,7 @@ const Main = () => {
                  
                     <Typewriter
                         options={{
-                        strings: [' Developer', ' Customer Service Expert', ' Lifelong Learner', 'Creative Thinker' ],
+                        strings: ['Software Developer', ' Customer Service Expert', ' Lifelong Learner', 'Creative Thinker' ],
                         autoStart: true,
                         loop: true,
                         
