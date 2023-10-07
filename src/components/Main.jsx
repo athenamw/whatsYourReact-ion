@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
+
 import me from '../assets/me.png'
 
 
@@ -25,14 +25,7 @@ const Main = () => {
                      />
                     </h2>
                                       
-                    <footer className="flex p-8 space-x-4 max-w-[200px] w-full fixed bottom-4">
-                        <a href="https://github.com/athenamw">
-                        <FaGithub className="cursor-pointer" size={30}/>
-                        </a>
-                        <a href="https://www.linkedin.com/in/athenawallis/">
-                        <FaLinkedinIn className="cursor-pointer" size={30} />
-                        </a>
-                    </footer>
+                    
                 </section>
             </section>
         </section>
