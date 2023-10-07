@@ -25,14 +25,14 @@ const Main = () => {
                      />
                     </h2>
                                       
-                    <section className="flex p-8 space-x-4 max-w-[200px] w-full fixed bottom-4">
+                    <footer className="flex p-8 space-x-4 max-w-[200px] w-full fixed bottom-4">
                         <a href="https://github.com/athenamw">
                         <FaGithub className="cursor-pointer" size={30}/>
                         </a>
                         <a href="https://www.linkedin.com/in/athenawallis/">
                         <FaLinkedinIn className="cursor-pointer" size={30} />
                         </a>
-                    </section>
+                    </footer>
                 </section>
             </section>
         </section>
