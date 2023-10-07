@@ -10,26 +10,31 @@ const Contact = () => {
     const [email, setEmail] = useState('')
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
+    const [messageSent, setMessageSent] = useState('false')
 
-    const validateForm = (event) =>{
-        event.preventDefault();
+    const validateForm = () =>{
         if (name.length == 0) {
-            alert('Name Required')
-            return
+            return [false, 'Name Required'];
         }
         if (email.length == 0) {
-            alert('Email Required')
-            return
+            return [false, 'Email Required'];
         }
         if (subject.length == 0) {
-            alert('Subject Required')
-            return
+            return [false, 'Subject Required'];
         }
-       
+        return [true, ''];
     }
 
+    const handleSubmitButton = (event) => {
+        event.preventDefault();
+        const [validForm, ErrorMessage] = validateForm();
+        if (!validForm) {
+            return alert(ErrorMessage);
+        }
+        setMessageSent('true');
+    }
 
-
+   
     return (
         <section id='contact' className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
             <h1 className="py-4 text-4xl font-bold text-center text-violet-800"></h1>
@@ -77,11 +82,8 @@ const Contact = () => {
                         <textarea className="border-2 rounded-lg border-gray-300" rows="10" id="message" name="message" onChange={(event) => setMessage(event.target.value)}></textarea>                      
                     </section>                    
                 </section>
-                <button type="submit" className="cursor-pointer bg-[#6A1B9A] text-gray-100 mt-4 w-full p-4 rounded-lg" onClick={()=> {
-                    validateForm()
-                }}>
-                        Send Message
-                    </button>
+                <button type="submit" className="cursor-pointer bg-[#6A1B9A] text-gray-100 mt-4 w-full p-4 rounded-lg" onClick={handleSubmitButton}>Send Message</button>
+
             </form>
         </section>
     )
