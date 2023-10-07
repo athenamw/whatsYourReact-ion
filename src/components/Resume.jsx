@@ -10,7 +10,7 @@ import resume from '../assets/resume.pdf'
 
 const Resume = () => {
     return (
-        <section className="flex flex-col items-center justify-center w-full mb-4">
+        <section id='resume' className="flex flex-col items-center justify-center w-full mb-4">
             <h1 className='text-4xl font-bold text-center text-violet-800'>Resume</h1>
 
              <section className="flex flex-col items-center justify-center w-full mb-10">
