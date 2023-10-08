@@ -16,12 +16,30 @@ const Portfolio = () => {
                 While taking a coding bootcamp through UC Berkeley and EdX, I have learned many skills. These include HTML, Css, Javascript, React, Mongo, SQL, Express, Node which have allowed me to create projects and improve my skills over time. 
             </p>
             <section className='grid sm:grid-cols-2 gap-12 '>
-                <ProjectItem img={linguini} title='Linguini Language Tutor App'/>
-                <ProjectItem img={recipeConcierge} title='Recipe Finder App'/>
-                <ProjectItem img={firstProject} title='First Portfolio'/>
-                <ProjectItem img={weatherScreenshot} title='Weather App'/>
-                <ProjectItem img={deployedPapyrus} title='Papyrus Note Taking App'/>                
-                <ProjectItem img={mainQuizPage} title='Quiz Game'/>                
+                <ProjectItem 
+                    img={linguini} 
+                    title='Linguini Language Tutor App' 
+                    link='https://pasta-fagioli-b817a8e5488d.herokuapp.com/' />
+                <ProjectItem 
+                    img={recipeConcierge} 
+                    title='Recipe Finder App' 
+                    link='https://athenamw.github.io/recipeConcierge/'/>
+                <ProjectItem 
+                    img={firstProject} 
+                    title='First Portfolio' 
+                    link='https://athenamw.github.io/Impressive_Portfolio/'/>
+                <ProjectItem 
+                    img={weatherScreenshot} 
+                    title='Weather App'
+                    link='https://athenamw.github.io/tutTutLooksLikeRain/'/>
+                <ProjectItem 
+                    img={deployedPapyrus} 
+                    title='Papyrus Note Taking App'
+                    link='https://frompapyrustoelectric-ac13fce63a4c.herokuapp.com/'/>                
+                <ProjectItem 
+                    img={mainQuizPage} 
+                    title='Quiz Game'
+                    link='https://athenamw.github.io/triviaTime/'/>                
             </section>
         </section>
 
