@@ -14,7 +14,7 @@ const Resume = () => {
              <section className="flex flex-col items-center justify-center w-full mb-10">
                 <p className="text-center py-8">I have gained multiple skills and learned new languages and technologies.</p>
              </section>
-             <section className="flex p-8 space-x-4 max-w-[200px] w-full">
+             <section className="flex space-x-4 justify-center max-w-[200px] w-full">
                         <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">
                         <FaHtml5 className="cursor-pointer" size={30}/>
                         </a>
